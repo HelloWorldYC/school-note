@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ROS学习心得 | 上学时笔记</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/school-note/images/myfavicon.png">
+    <meta name="description" content="怀念象牙塔时光">
+    
+    <link rel="preload" href="/school-note/assets/css/0.styles.c30ed50d.css" as="style"><link rel="preload" href="/school-note/assets/js/app.73bf7409.js" as="script"><link rel="preload" href="/school-note/assets/js/2.26c8f057.js" as="script"><link rel="preload" href="/school-note/assets/js/1.9edbc7d9.js" as="script"><link rel="preload" href="/school-note/assets/js/48.91f60079.js" as="script"><link rel="prefetch" href="/school-note/assets/js/10.6bf41d69.js"><link rel="prefetch" href="/school-note/assets/js/11.e082b28d.js"><link rel="prefetch" href="/school-note/assets/js/12.424063fd.js"><link rel="prefetch" href="/school-note/assets/js/13.0267b344.js"><link rel="prefetch" href="/school-note/assets/js/14.0bb9e20e.js"><link rel="prefetch" href="/school-note/assets/js/15.ab6d52d4.js"><link rel="prefetch" href="/school-note/assets/js/16.de32fbbc.js"><link rel="prefetch" href="/school-note/assets/js/17.0008473c.js"><link rel="prefetch" href="/school-note/assets/js/18.b6751064.js"><link rel="prefetch" href="/school-note/assets/js/19.6e0b99d6.js"><link rel="prefetch" href="/school-note/assets/js/20.3b4e6714.js"><link rel="prefetch" href="/school-note/assets/js/21.1744c71c.js"><link rel="prefetch" href="/school-note/assets/js/22.9aa39c11.js"><link rel="prefetch" href="/school-note/assets/js/23.8cc53d28.js"><link rel="prefetch" href="/school-note/assets/js/24.77c390b0.js"><link rel="prefetch" href="/school-note/assets/js/25.f6de6ff0.js"><link rel="prefetch" href="/school-note/assets/js/26.d1e01b93.js"><link rel="prefetch" href="/school-note/assets/js/27.903242ff.js"><link rel="prefetch" href="/school-note/assets/js/28.c2317508.js"><link rel="prefetch" href="/school-note/assets/js/29.6cbedfef.js"><link rel="prefetch" href="/school-note/assets/js/3.fd9cce16.js"><link rel="prefetch" href="/school-note/assets/js/30.af6d03e5.js"><link rel="prefetch" href="/school-note/assets/js/31.bb5e7344.js"><link rel="prefetch" href="/school-note/assets/js/32.51b20337.js"><link rel="prefetch" href="/school-note/assets/js/33.083fc63c.js"><link rel="prefetch" href="/school-note/assets/js/34.dad7dccc.js"><link rel="prefetch" href="/school-note/assets/js/35.2abc5866.js"><link rel="prefetch" href="/school-note/assets/js/36.7378acee.js"><link rel="prefetch" href="/school-note/assets/js/37.a87ee0a1.js"><link rel="prefetch" href="/school-note/assets/js/38.65687f94.js"><link rel="prefetch" href="/school-note/assets/js/39.209bbb9b.js"><link rel="prefetch" href="/school-note/assets/js/4.0aa80050.js"><link rel="prefetch" href="/school-note/assets/js/40.90f54a73.js"><link rel="prefetch" href="/school-note/assets/js/41.a0e6d671.js"><link rel="prefetch" href="/school-note/assets/js/42.c2055b49.js"><link rel="prefetch" href="/school-note/assets/js/43.a735dafb.js"><link rel="prefetch" href="/school-note/assets/js/44.7632fb56.js"><link rel="prefetch" href="/school-note/assets/js/45.ff9516d6.js"><link rel="prefetch" href="/school-note/assets/js/46.c8cf5cd5.js"><link rel="prefetch" href="/school-note/assets/js/47.a1229e08.js"><link rel="prefetch" href="/school-note/assets/js/49.70afd433.js"><link rel="prefetch" href="/school-note/assets/js/5.d1a412fe.js"><link rel="prefetch" href="/school-note/assets/js/6.bb714e54.js"><link rel="prefetch" href="/school-note/assets/js/7.10f49e1d.js"><link rel="prefetch" href="/school-note/assets/js/vendors~docsearch.06a8db8f.js">
+    <link rel="stylesheet" href="/school-note/assets/css/0.styles.c30ed50d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/school-note/" class="home-link router-link-active"><!----> <span class="site-name">上学时笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>matlab</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>python</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>无人机项目</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/school-note/无人机项目/PX4开发环境搭建.html" class="sidebar-link">PX4开发环境搭建</a></li><li><a href="/school-note/无人机项目/对P110B的理解.html" class="sidebar-link">对P110B的理解</a></li><li><a href="/school-note/无人机项目/ROS学习心得.html" class="active sidebar-link">ROS学习心得</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>数字图像处理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>深度学习</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>信源数估计</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="ros学习心得"><a href="#ros学习心得" class="header-anchor">#</a> ROS学习心得</h2> <ul><li>ROS：框架＋工具＋功能＋社区<br>
+ROS架构分为三个层次：OS层、中间层、应用层。<br>
+从系统实现的角度看，ROS也可分为三个层次：文件系统、计算图、开源社区。<br>
+ROS中的节点是一些执行运算任务的进程。<br>
+package：功能包，是ROS中的基本组织形式，编译（catkin）的基本单元，亦即编译的对象。<br>
+CMakeLists.txt：规定编译的规则。</li></ul> <p>1、利用<code>catkin_make</code>编译工作空间<br>
+（1）建立工作空间，一定要有src文件（编写源码的地方）</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">mkdir</span> <span class="token parameter variable">-p</span> ~/catkin_ws/src   <span class="token comment"># catkin_ws是工作空间，名称可以自己修改</span>
+<span class="token builtin class-name">cd</span> ~/catkin_ws/
+catkin_make
+</code></pre></div><p>（2）编译（必须回到工作空间进行编译）</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token builtin class-name">cd</span> ~/catkin_ws/
+catkin_make
+<span class="token builtin class-name">source</span> ~/catkin_ws/devel/setup.bash		<span class="token comment"># 刷新环境</span>
+</code></pre></div><br> <p>2、一个 package 可以包含多个可执行文件（节点），但其至少要有 CMakeLists.txt 和 package.xml 这两个文件。<br>
+（1）CMakeLists.txt：</p> <div class="language-cmake extra-class"><pre class="language-cmake"><code><span class="token keyword">cmake_minimum_required</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  	<span class="token comment"># 指定catkin最低版本</span>
+<span class="token keyword">project</span><span class="token punctuation">(</span><span class="token punctuation">)</span>   				<span class="token comment"># 指定软件包的名称</span>
+<span class="token keyword">find_package</span><span class="token punctuation">(</span><span class="token punctuation">)</span>				<span class="token comment"># 指定编译时需要的依赖项</span>
+<span class="token function">add_message_files</span><span class="token punctuation">(</span><span class="token punctuation">)</span>			<span class="token comment"># 添加消息文件</span>
+<span class="token function">add_service_files</span><span class="token punctuation">(</span><span class="token punctuation">)</span>			<span class="token comment"># 添加服务文件</span>
+<span class="token function">add_action_files</span><span class="token punctuation">(</span><span class="token punctuation">)</span>			<span class="token comment"># 添加动作文件</span>
+<span class="token function">generate_messages</span><span class="token punctuation">(</span><span class="token punctuation">)</span>			<span class="token comment"># 生成消息、服务、动作</span>
+<span class="token function">catkin_package</span><span class="token punctuation">(</span><span class="token punctuation">)</span>			<span class="token comment"># 指定catkin信息给编译系统生成Cmake文件</span>
+<span class="token keyword">add_library</span><span class="token punctuation">(</span><span class="token punctuation">)</span>				<span class="token comment"># 指定生成库文件</span>
+<span class="token keyword">add_executable</span><span class="token punctuation">(</span><span class="token punctuation">)</span>			<span class="token comment"># 指定生成可执行文件</span>
+<span class="token keyword">target_link_libraries</span><span class="token punctuation">(</span><span class="token punctuation">)</span>		<span class="token comment"># 指定可执行文件需要链接哪些库</span>
+<span class="token function">catkin_add_gtest</span><span class="token punctuation">(</span><span class="token punctuation">)</span>			<span class="token comment"># 添加测试单元</span>
+<span class="token keyword">install</span><span class="token punctuation">(</span><span class="token punctuation">)</span>					<span class="token comment"># 生成可安装目标</span>
+</code></pre></div><p>（2）package.xml：</p> <div class="language-xml extra-class"><pre class="language-xml"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>package</span><span class="token punctuation">&gt;</span></span>						<span class="token comment">&lt;!--根标签--&gt;</span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>name</span><span class="token punctuation">&gt;</span></span>							<span class="token comment">&lt;!--包名--&gt;</span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>						<span class="token comment">&lt;!--版本号--&gt;</span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>description</span><span class="token punctuation">&gt;</span></span>					<span class="token comment">&lt;!--包描述--&gt;</span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>maintainer</span><span class="token punctuation">&gt;</span></span>					<span class="token comment">&lt;!--维护者--&gt;</span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>license</span><span class="token punctuation">&gt;</span></span>						<span class="token comment">&lt;!--软件许可--&gt;</span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>buildtool_depend</span><span class="token punctuation">&gt;</span></span>				<span class="token comment">&lt;!--编译工具--&gt;</span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>build_depend</span><span class="token punctuation">&gt;</span></span>					<span class="token comment">&lt;!--编译时的依赖--&gt;</span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>run_depend</span><span class="token punctuation">&gt;</span></span>					<span class="token comment">&lt;!--运行时的依赖--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>package</span><span class="token punctuation">&gt;</span></span>						<span class="token comment">&lt;!--根标签--&gt;</span>
+</code></pre></div><p>（3）代码文件：脚本（shell、python）、C++（头文件、源文件）</p> <p>（4）自定义通信格式：message消息(*.msg)、service服务（*.srv）、action动作（*.action）<br>
+在自定义服务类型时，在 CmakeList.txt 中要添加如下配置：</p> <div class="language-cmake extra-class"><pre class="language-cmake"><code><span class="token keyword">find_package</span><span class="token punctuation">(</span>catkin REQUIRED COMPONENTS
+  geometry_msgs
+  roscpp
+  rospy
+  std_msgs
+  message_generation
+<span class="token punctuation">)</span>
+<span class="token function">add_service_files</span><span class="token punctuation">(</span>
+   FILES
+   AddTwoInts.srv
+ <span class="token punctuation">)</span>
+<span class="token function">generate_messages</span><span class="token punctuation">(</span>
+   DEPENDENCIES
+   std_msgs
+ <span class="token punctuation">)</span>
+</code></pre></div><p>在编译功能包时，要在 CmakeList.txt 中要添加如下配置：</p> <div class="language-cmake extra-class"><pre class="language-cmake"><code><span class="token keyword">include_directories</span><span class="token punctuation">(</span>include <span class="token punctuation">${</span>catkin_INCLUDE_DIRS<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">add_executable</span><span class="token punctuation">(</span>server src/server.cpp<span class="token punctuation">)</span>
+<span class="token keyword">add_dependencies</span><span class="token punctuation">(</span>server <span class="token punctuation">${</span><span class="token punctuation">${</span>AddTwoInts<span class="token punctuation">}</span>_EXPORTED_TARGETS<span class="token punctuation">}</span> <span class="token punctuation">${</span>catkin_EXPORTED_TARGETS<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">target_link_libraries</span><span class="token punctuation">(</span>listener <span class="token punctuation">${</span>catkin_LIBRARIES<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>（5）launch文件以及配置文件：<br>
+launch文件：一次性运行多个可执行文件。<br>
+配置文件：yaml</p> <p>（6）一个典型package文件的构成：</p> <div class="language- extra-class"><pre class="language-text"><code>CMakeLists.txt  
+package.xml  
+scripts：*.py、*.sh  
+include：*.h  
+src：*.cpp  
+msg：*.msg  
+srv：*.srv  
+launch：*.launch  
+</code></pre></div><br> <p>3、常用包管理命令：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 查找某个pkg的地址</span>
+rospack <span class="token function">find</span> package_name
+
+<span class="token comment"># 列出本地所有pkg</span>
+rospack list
+
+<span class="token comment"># 跳转到某个pkg的路径下</span>
+roscd package_name
+
+<span class="token comment"># 列举某个pkg下的文件信息</span>
+rosls package_name
+
+<span class="token comment"># 编译pkg中的文件</span>
+rosed package_name file_name
+
+<span class="token comment"># 创建一个pkg</span>
+catkin_create_pkg <span class="token punctuation">[</span>pkg_name<span class="token punctuation">]</span> <span class="token punctuation">[</span>depends_name<span class="token punctuation">]</span>
+
+<span class="token comment"># 安装某个pkg所需的依赖</span>
+rosdep <span class="token function">install</span> <span class="token punctuation">[</span>pkg_name<span class="token punctuation">]</span>
+
+<span class="token comment"># 启动ros master</span>
+roscore
+
+<span class="token comment"># 日志输出</span>
+rosout
+
+<span class="token comment"># 参数服务器</span>
+parameter server
+
+<span class="token comment"># 启动一个node</span>
+rosrun <span class="token punctuation">[</span>pkg_name<span class="token punctuation">]</span> <span class="token punctuation">[</span>node_name<span class="token punctuation">]</span>
+
+<span class="token comment"># 列出当前运行的node信息</span>
+rosnode list
+
+<span class="token comment"># 显示某个node的详细信息</span>
+rosnode info <span class="token punctuation">[</span>node_name<span class="token punctuation">]</span>
+
+<span class="token comment"># 结束某个node</span>
+rosnode <span class="token function">kill</span> <span class="token punctuation">[</span>node_name<span class="token punctuation">]</span>
+
+<span class="token comment"># 启动master和多个node</span>
+roslaunch <span class="token punctuation">[</span>pkg_name<span class="token punctuation">]</span> <span class="token punctuation">[</span>file_name.launch<span class="token punctuation">]</span> 
+</code></pre></div><br> <p>4、ROS通信</p> <ul><li>ROS的核心：分布式网络，使用了基于TCP/IP的通信方式，实现了模块间点对点的松耦合连接，可以实现若干种类型的通信。</li> <li>ROS是一个分布式框架，为用户提供多节点（进程）之间的通信服务，所有软件功能和工具都建立在这种分布式通信机制上。</li> <li>ROS的通信机制：话题通信机制、服务通信机制、参数管理通信机制。</li></ul> <p>（1）话题通信机制工作原理：<br>
+发布者 Talker 通过 RPC 向 ROS Master 注册信息；<br>
+订阅者 Listener 通过 RPC 向 ROS Master 注册信息；<br>
+ROS Master 进行信息匹配，若匹配成功则通过 RPC 向 Listener 发送 Talker 的 RPC 地址信息；<br>
+Listener 通过 RPC 向 Talker 发送连接请求；<br>
+Talker 接收连接请求，通过 RPC 向 Listener 确认连接信息；<br>
+Listener 尝试与 Talker 建立网络连接（TCP方式）<br>
+Talker 向 Listener 发布数据。</p> <p>（2）服务通信机制原理：<br>
+Talker 注册；<br>
+Listener 注册；<br>
+ROS Master 进行信息匹配，若匹配成功则向 Listener 发送 Talker 的 TCP 地址信息；<br>
+Listener 使用 TCP 尝试与 Talker 建立网络连接，并且发送服务的请求数据；<br>
+Talker 接收服务请求和参数后，开始执行服务功能，执行完成后，向 Listener 发送应答数据。</p> <p>（3）参数管理机制原理：<br>
+Talker 设置变量，使用 RPC 向 ROS Master 发送参数设置数据，包含参数名和参数值;<br>
+ROS Master 会将参数名和参数值保存到参数列表中；<br>
+Listener 通过 RPC 向 ROS Master 发送参数查找请求，包含所要查找的参数名；<br>
+ROS Master 根据 Listener 的查找请求从参数列表中进行查找，查找到参数后，使用 RPC 将参数值发送给 Listener。
+<br></p> <p>5、环境变量<br>
+设置环境变量是为了让系统知道功能包的位置在哪，以便能找到。<br>
+环境变量的设置脚本文件是<code>setup.bash</code>。<br>
+让环境变量在所有终端中有效，则需要在终端的配置文件中加入环境变量的设置</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token builtin class-name">echo</span> <span class="token string">&quot;source /WORKSPACE/devel/setup.bash&quot;</span> <span class="token operator">&gt;&gt;</span> ~/.bashrc
+</code></pre></div><p>6、工作空间的覆盖：<br>
+新设置的路径在<code>ROS_PACKAGE_PATH</code>中会自动放置在最前端。在运行时，ROS 会优先查找最前端的工作空间是否存在指定的功能包，如果不存在，就顺序向后查找其他工作空间，直到最后一个工作空间为止。</p> <p>7、创建 Publisher 发布者：<br>
+（1）头文件；<br>
+（2）初始化节点；<br>
+（3）创建节点句柄；<br>
+（4）在 Master 端注册一个 Publisher。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/school-note/无人机项目/对P110B的理解.html" class="prev">
+        对P110B的理解
+      </a></span> <span class="next"><a href="/school-note/数字图像处理/基础概述.html">
+        基础概述
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/school-note/assets/js/app.73bf7409.js" defer></script><script src="/school-note/assets/js/2.26c8f057.js" defer></script><script src="/school-note/assets/js/1.9edbc7d9.js" defer></script><script src="/school-note/assets/js/48.91f60079.js" defer></script>
+  </body>
+</html>

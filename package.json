@@ -1,22 +1,21 @@
 {
   "name": "school-note",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
   "scripts": {
-    "docs": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
-    "deploy": "bash deploy.sh",
+    "docs": "set NODE_OPTIONS=--openssl-legacy-provider && vuepress dev docs",
+    "docs:build": "set NODE_OPTIONS=--openssl-legacy-provider && vuepress build docs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "keywords": [],
+  "author": "MYC",
   "license": "ISC",
-  "devDependencies": {
-    "@maginapp/vuepress-plugin-katex": "^1.0.11",
-    "vuepress": "^1.8.2",
-    "vuepress-plugin-mathjax": "^1.2.8"
-  },
+  "description": "",
   "dependencies": {
-    "mathjax": "^3.2.0"
+    "@maginapp/vuepress-plugin-katex": "^1.0.11",
+    "vuepress": "^1.9.10"
   }
 }
