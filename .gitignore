@@ -1,0 +1,4 @@
+/deploy.sh
+/.vuepress/deploy.sh
+/.vuepress/dist
+/node_modules
